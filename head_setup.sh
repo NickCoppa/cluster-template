@@ -33,3 +33,4 @@ sudo mount -t nfs 192.168.1.3:/scratch /scratch
 
 # setup automount
 sudo echo "192.168.1.3:/scratch /scratch nfs defaults 0 0" >> /etc/fstab
+sudo echo "192.168.1.1:/software /software nfs defaults 0 0" >> /etc/fstab
