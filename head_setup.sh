@@ -30,6 +30,7 @@ sudo firewall-cmd --reload
 # set client up, setup mount point from storage, to head
 sudo mkdir -p /scratch
 sudo mount -t nfs 192.168.1.3:/scratch /scratch
+sudo mount -t nfs 192.168.1.1:/software /software
 
 # setup automount
 sudo echo "192.168.1.3:/scratch /scratch nfs defaults 0 0" >> /etc/fstab
