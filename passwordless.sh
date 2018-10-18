@@ -83,17 +83,15 @@ cat $PUBKEY >> $SSHDIR/authorized_keys
 chmod 600 $SSHDIR/authorized_keys
 
 
-CUSTOM_USER=nc835571
-CUSTOM_SSHDIR=/users/nc835571/.ssh
+CUSTOM_USER=ka837933
+CUSTOM_SSHDIR=/users/ka837933/.ssh
 CUSTOM_GROUP=`id -gn ${CUSTOM_USER}`
 
 cp $PRIVKEY ${CUSTOM_SSHDIR}
 cp $PUBKEY ${CUSTOM_SSHDIR}
 cat $PUBKEY >> ${CUSTOM_SSHDIR}/authorized_keys
 chown -R ${CUSTOM_USER}:${CUSTOM_GROUP} ${CUSTOM_SSHDIR}
-sudo touch /users/nc835571/.ssh/config
-sudo echo "StrictHostKeyChecking no" | sudo tee --append /users/nc835571/.ssh/config
-
-# su nc835571 -c 'echo "StrictHostKeyChecking no" > ${CUSTOM_SSHDIR}/config'
+sudo touch /users/ka837933/.ssh/config
+sudo echo "StrictHostKeyChecking no" | sudo tee --append /users/ka837933/.ssh/config
 
 exit 0
