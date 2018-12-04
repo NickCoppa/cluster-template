@@ -43,7 +43,7 @@ sudo /local/repository/install_mpi.sh
 #install Munge
 #sudo yum install epel-release
 #sudo yum install munge munge-libs munge-devel -y
-#sudo yum install rng-tools -y
-#rngd -r /dev/urandom
+#sudo yum install rng-tools -y -NO
+#rngd -r /dev/urandom          -NO
 #/usr/sbin/create-munge-key -r
 #sudo su -c "dd if=/dev/urandom bs=1 count=1024 > /etc/munge/munge.key"
