@@ -37,3 +37,13 @@ sudo echo "192.168.1.3:/scratch /scratch nfs defaults 0 0" >> /etc/fstab
 #install mpi
 sudo chmod 777 /local/repository/install_mpi.sh
 sudo /local/repository/install_mpi.sh
+
+#install MariaDB
+
+#install Munge
+#sudo yum install epel-release
+#sudo yum install munge munge-libs munge-devel -y
+#sudo yum install rng-tools -y
+#rngd -r /dev/urandom
+#/usr/sbin/create-munge-key -r
+#sudo su -c "dd if=/dev/urandom bs=1 count=1024 > /etc/munge/munge.key"
