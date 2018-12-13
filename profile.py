@@ -54,6 +54,9 @@ for i in range(6):
   
   elif i == 1:
     node = request.XenVM("metadata")
+    
+    node.addService(pg.Execute(shell="sh", command="sudo chmod 777 /local/repository/slurm_node_setup.sh"))
+    node.addService(pg.Execute(shell="sh", command="sudo /local/repository/slurm_node_setup.sh"))
   
   elif i == 2:
     node = request.XenVM("storage")
