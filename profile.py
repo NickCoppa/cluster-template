@@ -48,6 +48,9 @@ for i in range(6):
     node.addService(pg.Execute(shell="sh", command="sudo chmod 777 /local/repository/slurm_node_setup.sh"))
     node.addService(pg.Execute(shell="sh", command="sudo /local/repository/slurm_node_setup.sh"))
     
+    node.addService(pg.Execute(shell="sh", command="sudo chmod 777 /local/repository/slurm_head_setup.sh"))
+    node.addService(pg.Execute(shell="sh", command="sudo /local/repository/slurm_head_setup.sh"))
+    
     #node.addService(pg.Execute(shell="sh", command="sudo chmod 777 /local/repository/head_setup.sh"))
     #node.addService(pg.Execute(shell="sh", command="sudo /local/repository/head_setup.sh"))
     
